@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Shiroiro</title>
+</head>
+<body class="relative dark:bg-dark-main-color bg-gray-100 text-black dark:text-[#ffffffb3] dark duration-150">
+    <div class="overlay close-video absolute w-full h-full top-0 left-0 bg-overlay z-998 duration-120 opacity-0 hidden"></div>
+    <div class="to-up fixed right-0 bottom-0 z-9999 flex-center cursor-pointer m-8 py-3 px-3 rounded-md bg-icons-color text-white duration-120 hover:contrast-150">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="dark:bg-dark-secondary-color">
+        <header class="fixed w-full top-0 left-0 duration-80 z-9999">
+        <div class="container py-6 flex-center duration-80 text-[16px]">
+            <a href="index.html" class="w-30 sm:w-40 tb:w-55 mr-auto tb:mr-10 xl:mr-25">
+                <img class="logo w-full" src="images/logo/logo.svg" alt="">
+            </a>
+            <div class="flex items-center tb:justify-between min-[992px]:w-full">
+                <nav class="z-999 flex items-center space-x-12 py-4 duration-150 max-[992px]:flex-col max-[992px]:items-start max-[992px]:absolute max-[992px]:right-0 max-[992px]:top-18 max-[992px]:w-[250px] max-[992px]:px-6 max-[992px]:rounded max-[992px]:dark:bg-dark-main-color max-[992px]:bg-gray-200 max-[992px]:hidden max-[992px]:opacity-0">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#support">Support</a>
+                    <div class="sign md:hidden flex items-center w-full justify-between mt-5">
+                        <a href="sign-in.html" class="text-nowrap bg-gray-500">Sign In</a>
+                        <a href="sign-up.html" class="text-nowrap bg-icons-color">Sign Up</a>
+                    </div>
+                </nav>
+                <div class="sign hidden md:flex items-center space-x-7 text-black dark:text-white mr-5">
+                    <a href="sign-in.html" class="text-nowrap">Sign In</a>
+                    <a href="sign-up.html" class="text-nowrap bg-icons-color text-white py-3 px-8 md:px-9 lg:px-6 font-medium rounded-[3px] hover:contrast-125 duration-125">Sign Up</a>
+                </div>
+            </div>
+            <i class="fi fi-rs-brightness translate-y-1 cursor-pointer text-[20px] theme ml-[20px]"></i>
+            <i class="fi fi-rr-menu-burger text-2xl translate-y-1 cursor-pointer burger ml-8 min-[992px]:hidden"></i>
+        </div>
+        </header>
+        <div class="max-md:opacity-30 absolute top-0 right-0 max-[376px]:w-[440px]">
+            <img class="w-full" src="images/hero/shape-01.svg" alt=""> 
+        </div>
+        <section id="home" class="relative max-[575px]:!pt-[110px]">
+            <img class="max-md:opacity-30 absolute bottom-0 left-0" src="images/hero/shape-02.svg" alt="">
+            <div class="container flex-center flex-col xl:pt-[180px] xl:pb-[160px] md:pt-[80px] md:pb-[120px] pb-16 pt-[60px] w-full h-[525px]">
+                <div class="max-w-[800px] text-center mb-15">
+                    <h2 class="mb-5 text-black dark:text-white text-3xl sm:text-4xl md:text-5xl font-bold !leading-tight">Free and Open-Source Next.js Template for Startup & SaaS</h2>
+                    <p class="dark:text-text-color sm:text-lg md:text-xl leading-relaxed">Startup is free Next.js template for startups and SaaS business websites comes with all the essential pages, components, and sections you need to launch a complete business website, built-with Next 13.x and Tailwind CSS.</p>
+                </div>
+                <div class="flex-center sm:space-x-5 max-sm:space-y-5 max-sm:flex-col">
+                    <a href="" class="px-11 py-4 rounded-sm font-bold text-white bg-icons-color">Get Pro</a>
+                    <a href="" class="px-8 py-4 rounded-sm font-bold text-white bg-black dark:bg-[#ffffff1a]">Star on Github</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="container">
+            <div class="title">
+                <h2>Main Features</h2>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="features grid gap-y-14 gap-x-8 grid-cols-1 md:grid-cols-2 tb:grid-cols-3 grid-rows-2">
+                <div class="box">
+                    <div class="icon"><ion-icon name="grid"></ion-icon></div>
+                    <h3>Crafted for Startups</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="layers"></ion-icon></div>
+                    <h3>High-quality Design</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="apps"></ion-icon></div>
+                    <h3>Next.js 13 (Latest)</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="settings-sharp"></ion-icon></div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="copy"></ion-icon></div>
+                    <h3>Fully Customizable</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="qr-code"></ion-icon></div>
+                    <h3>Free and Open-Source</h3>
+                    <p>Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative overflow-hidden">
+        <div class="absolute -z-1 bottom-0 left-0 h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
+        <div class="container">
+            <div class="title">
+                <h2>We are ready to help</h2>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+            </div> 
+            <div class="video relative mx-auto max-w-[770px] max-h-[400px]">
+                <img src="images/video/video.jpg" alt="" class="w-full rounded-md">
+                <div class="play-btn cursor-pointer flex-center absolute top-1/2 left-1/2 -translate-1/2 bg-white text-icons-color rounded-full size-[70px] duration-120 opacity-70 hover:opacity-100">
+                    <ion-icon class="text-[25px]" name="play"></ion-icon>
+                </div>
+                <div class="embed hidden opacity-0 duration-120 fixed left-1/2 top-1/2 -translate-1/2 w-full max-w-[870px] z-999">
+                    <iframe class="w-full h-[450px] mx-[30px] max-[360px]:mx-[15px]" src="https://www.youtube.com/embed/IxX_QHay02M?list=RDIxX_QHay02M" title="W&amp;W - OIIA OIIA (Spinning Cat)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <ion-icon name="close-outline" class="close-video absolute top-[-50px] right-[18px] max-[360px]:right-[5px] text-[50px] cursor-pointer z-999"></ion-icon>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="flex justify-between items-center max-tb:flex-col gap-14 pt-50 border-b-1 dark:border-white/[.15] border-gray-300 pb-16 md:pb-20 lg:pb-28">
+                <div class="text">
+                    <div class="title tb:!text-left !mb-[40px]">
+                    <h2>Crafted for Startup, SaaS and Business Sites.</h2>
+                    <p>The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables.</p>
+                    </div>
+                    <ul class="checklist grid min-[575px]:grid-cols-2 tb:grid-cols-1 min-[75rem]:grid-cols-2 grid-rows-3 gap-y-5 gap-x-10 w-fit max-tb:mx-auto max-[35.938rem]:mx-0">
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Premium Quality</span>
+                        </li>
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Tailwind CSS</span>
+                        </li>
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Use for lifetime</span>
+                        </li>
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Next.js</span>
+                        </li>
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Rich documentation</span>
+                        </li>
+                        <li>
+                            <div>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            </div>
+                            <span>Developer friendly</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pic max-w-[500px] max-tb:mx-auto">
+                    <img class="about-img-1 max-w-full" src="images/about/about-image-dark.svg" alt="">
+                </div>
+            </div>
+            <div class="text-2 flex items-center max-tb:flex-col pt-16 md:pt-20 lg:pt-28">
+                <div class="pic max-w-[500px] mr-50 max-tb:mx-auto max-tb:mb-12">
+                    <img class="about-img-2 max-w-full" src="images/about/about-image-2-dark.svg" alt="">
+                </div>
+                <div class="text max-w-[470px]">
+                    <div class="title">
+                        <h2>Bug free code</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="title">
+                        <h2>Premier support</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="title !mb-0">
+                        <h2>Next.js</h2>
+                        <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt consectetur adipiscing elit setim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dark:bg-dark-secondary-color bg-secondary-color relative">
+        <div class="container">
+            <img class="w-[250px] absolute bottom-0 left-0 opacity-30" src="images/wavy-lines.png" alt="">
+            <div class="title">
+                <h2>What Our Users Says</h2>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="users grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="box">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.</p>
+                    <div class="profile">
+                        <img src="images/testimonials/auth-01.png" alt="">
+                        <div class="text">
+                            <h4>Kamui</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.</p>
+                    <div class="profile">
+                        <img src="images/testimonials/auth-02.png" alt="">
+                        <div class="text">
+                            <h4>Shiro</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.</p>
+                    <div class="profile">
+                        <img src="images/testimonials/auth-03.png" alt="">
+                        <div class="text">
+                            <h4>Nova</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="container">
+            <div class="title">
+                <h2>Simple and Affordable Pricing</h2>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="sub-type flex-center">
+                <span class="active">Monthly</span>
+                <div class="radio relative mx-4 py-3 px-7 bg-icons-bg-color rounded-[50px] cursor-pointer">
+                    <div class="outer-circle duration-100 absolute rounded-full bg-icons-color p-3.5 top-0 left-0 translate-y-[-2px]">
+                        <div class="inner-circle absolute rounded-full bg-white p-2 top-1/2 left-1/2 -translate-1/2"></div>
+                    </div>
+                </div>
+                <span>Yearly</span>
+            </div>
+            <div class="subs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+                <div class="box">
+                    <div class="type">
+                        <div class="price">
+                            <h4>$</h4>
+                            <h3>40</h3>
+                            <span>/mo</span>
+                        </div>
+                        <div class="sub">Lite</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim.</p>
+                    <div class="btn">Start Free rial</div>
+                    <ul>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>All UI Components</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Use with Unlimited Projects</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Commercial Use</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Email Support</span>
+                        </li>
+                        <li>
+                            <ion-icon name="close-sharp"></ion-icon>
+                            <span>Lifetime Access</span>
+                        </li>
+                        <li>
+                            <ion-icon name="close-sharp"></ion-icon>
+                            <span>Free Lifetime Updates</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <div class="type">
+                        <div class="price">
+                            <h4>$</h4>
+                            <h3>399</h3>
+                            <span>/mo</span>
+                        </div>
+                        <div class="sub">Basic</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim.</p>
+                    <div class="btn">Start Free rial</div>
+                    <ul>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>All UI Components</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Use with Unlimited Projects</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Commercial Use</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Email Support</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Lifetime Access</span>
+                        </li>
+                        <li>
+                            <ion-icon name="close-sharp"></ion-icon>
+                            <span>Free Lifetime Updates</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <div class="type">
+                        <div class="price">
+                            <h4>$</h4>
+                            <h3>589</h3>
+                            <span>/mo</span>
+                        </div>
+                        <div class="sub">Plus</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim.</p>
+                    <div class="btn">Start Free rial</div>
+                    <ul>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>All UI Components</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Use with Unlimited Projects</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Commercial Use</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Email Support</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Lifetime Access</span>
+                        </li>
+                        <li>
+                            <ion-icon name="checkmark-sharp"></ion-icon>
+                            <span>Free Lifetime Updates</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="bg-secondary-color dark:bg-dark-secondary-color">
+        <div class="container">
+            <div class="title">
+                <h2>Our Latest Blog</h2>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="blog grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 ">
+                <div class="box">
+                    <div class="pic">
+                        <img src="images/blog/blog-01.jpg" alt="">
+                        <span>Creative</span>
+                    </div>
+                    <div class="p-8">
+                        <h4>Best UI components for modern websites</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.</p>
+                        <div class="profile">
+                            <img src="images/blog/author-01.png" alt="">
+                            <div class="text">
+                                <h5>By Samuyl Joshi</h5>
+                                <span>Graphic Designer</span>
+                            </div>
+                            <div class="date">
+                                <h5>Date</h5>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="images/blog/blog-02.jpg" alt="">
+                        <span>Computer</span>
+                    </div>
+                    <div class="p-8">
+                        <h4>9 simple ways to improve your design skills</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.</p>
+                        <div class="profile">
+                            <img src="images/blog/author-02.png" alt="">
+                            <div class="text">
+                                <h5>By Musharof Chy</h5>
+                                <span>Content Writer</span>
+                            </div>
+                            <div class="date">
+                                <h5>Date</h5>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="images/blog/blog-03.jpg" alt="">
+                        <span>Design</span>
+                    </div>
+                    <div class="p-8">
+                        <h4>Tips to quickly improve your coding speed</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.</p>
+                        <div class="profile">
+                            <img src="images/blog/author-03.png" alt="">
+                            <div class="text">
+                                <h5>By Lethium Deo</h5>
+                                <span>Graphic Designer</span>
+                            </div>
+                            <div class="date">
+                                <h5>Date</h5>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support">
+        <div class="container">
+            <div class="flex max-tb:flex-wrap gap-8">
+                <form action="" class="ticket dark:bg-dark-box bg-white rounded-sm shadow-box-shadow py-15 px-13 sm:px-10 xl:px-13 w-full lg:w-7/12 xl:w-8/12">
+                    <div class="title !mb-18">
+                        <h2 class="!text-3xl !mb-2">Need Help? Open a Ticket</h2>
+                        <p class="!text-base">Our support team will get back to you ASAP via email.</p>
+                    </div>
+                    <div class="md:flex mb-16 gap-4 w-full">
+                        <div class="name max-md:mb-16">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your Name">
+                        </div>
+                        <div class="email max-md:mb-16">
+                            <label for="email">Your Email</label>
+                            <input type="mail" id="email" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Enter your Message" class="mb-8 h-[150px] resize-none"></textarea>
+                    </div>
+                    <input type="submit" value="Submit Ticket" class="cursor-pointer !bg-icons-color !text-white !w-fit !py-3 !px-9 font-medium duration-150 hover:contrast-125">
+                </form>
+                <form action="" class="subscribe flex-center flex-col dark:bg-dark-box bg-white rounded-sm shadow-box-shadow w-full lg:w-5/12 xl:w-4/12 px-11 py-15">
+                    <div class="title pb-12 !mb-11 border-b-1 border-gray-300 dark:border-gray-700">
+                        <h2 class="!text-2xl !mb-4">Subscribe to receive future updates</h2>
+                        <p class="text-base">Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare massa quis lectus.</p>
+                    </div>
+                    <input type="text" id="name" placeholder="Enter your Name">
+                    <input type="text" id="email" placeholder="Enter your Email">
+                    <input type="submit" value="Subscribe" class="cursor-pointer !bg-icons-color !text-white !py-3 !px-9 font-medium duration-150 hover:contrast-125">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary-color dark:bg-dark-box">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-x-10 gap-y-10 sm:gap-y-15 py-15 tb:pt-25">
+                <div class="social lg:w-5/12">
+                    <img src="images/logo/logo.svg" alt="" class="logo">
+                    <p class="max-w-[360px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis.</p>
+                    <div class="flex items-center gap-x-6">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <i class="fi fi-brands-twitter-alt-circle translate-y-[3px]"></i>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                </div>
+                <div class="links">
+                    <h4>Useful Links</h4>
+                    <a href="#blog">Blog</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="terms links">
+                    <h4>Terms</h4>
+                    <a href="#">TOS</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="help links">
+                    <h4>Support & Help</h4>
+                    <a href="#support">Open Support Ticket</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+            <div class="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] dark:via-[#959CB183] to-transparent"></div>
+            <div class="credits flex-center max-tb:flex-col gap-2 w-full py-8 max-[360px]:text-[14px]">
+                <div class="flex">
+                    <p>Template by</p>
+                    <a href="https://uideck.com/">UIdeck </a>
+                    <p>and</p> 
+                    <a href="https://nextjstemplates.com/">Next.js Templates</a>
+                </div>
+                <div class="flex">
+                    <p>Developed by</p>
+                    <a href="https://github.com/MedReda0">Mohamed Reda</a>
+                </div>
+                <div class="flex">
+                    <p>Icons by</p>
+                    <a href="https://www.flaticon.com/uicons">Flaticon</a>
+                    <p>and</p>
+                    <a href="https://ionic.io/ionicons">Ionicons</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import "tailwindcss";
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@theme {
+    --color-secondary-color: #eff2f9;
+    --color-dark-main-color: #121723;
+    --color-dark-secondary-color: #181c28;
+    --color-header-overlay: rgba(63, 62, 62, 0.336);
+    --color-overlay: rgba(10, 14, 29, 0.7);
+    --color-icons-color: #4b6cf7;
+    --color-icons-bg-color: rgba(74, 109, 247, 0.2);
+    --color-text-color: #959cb1;
+    --color-text-2color: #788293;
+    --color-dark-box: #1d232f;
+    --color-dark-login: #2c303b;
+    --breakpoint-tb: 62rem;
+    --shadow-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.1);
+    --shadow-hover-box: 0px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-dark-hover-box: 0px 5px 15px #1e232e;
+}
+
+@utility flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    @apply hover:text-icons-color hover:dark:text-white duration-100 max-[992px]:py-3
+}
+
+header a.active {
+    @apply text-icons-color dark:text-white duration-100
+}
+
+header nav .sign a{
+    @apply text-white text-center w-[97px] font-medium rounded-[3px] hover:contrast-125 duration-125
+}
+
+section {
+    @apply py-16 md:py-20 tb:py-28 duration-125
+}
+
+.title {
+    @apply text-center max-w-[570px] mx-auto mb-[100px]
+}
+
+.title h2 {
+    @apply dark:text-white mb-4 text-3xl sm:text-4xl md:text-[45px] !leading-tight font-bold
+}
+
+.title p {
+    @apply text-text-2color !leading-relaxed md:text-lg
+}
+
+.box {
+    @apply dark:bg-dark-box
+}
+
+.features .box {
+    @apply w-full bg-transparent
+}
+
+.features .box .icon {
+    @apply flex-center text-icons-color text-5xl rounded-[6px] bg-icons-bg-color w-[70px] h-[70px] py-[12px] px-[10px]
+}
+
+.features .box ion-icon {
+    @apply text-[43px]
+}
+
+.features .box h3 {
+    @apply my-3 font-bold text-2xl mt-10 dark:text-white
+}
+
+.box p {
+    @apply text-text-2color mt-5 leading-relaxed pr-[10px]
+}
+
+.checklist li {
+    @apply flex items-center space-x-4
+}
+
+.checklist li>div {
+    @apply flex-center rounded-md text-icons-color bg-icons-bg-color size-[30px]
+}
+
+.checklist li ion-icon {
+    @apply translate-y-[-1px] text-[22px]
+}
+
+.text-2 .title {
+    @apply mb-10 text-left
+}
+
+.text-2 .title h2 {
+    @apply text-xl sm:text-2xl lg:text-xl xl:text-2xl
+}
+
+.text-2 .title p {
+    @apply text-base sm:text-lg font-medium leading-relaxed
+}
+
+.users .box {
+    @apply bg-white dark:bg-[#1d2430] p-8 lg:px-5 xl:p-8 rounded-sm duration-200 shadow-box-shadow hover:shadow-hover-box dark:hover:shadow-dark-hover-box
+}
+
+.users .box .stars ion-icon {
+    @apply text-amber-400 text-[16px]
+}
+
+.users .box p {
+    @apply dark:text-white text-[#788293] pb-8 border-b-1 border-[#788293] dark:border-gray-600
+}
+
+.users .box .profile {
+    @apply pt-8 flex items-center gap-4
+}
+
+.users .box .profile .text h4 {
+    @apply font-bold text-lg dark:text-white
+}
+
+.users .box .profile .text span {
+    @apply text-sm text-[#788293]
+}
+
+.sub-type span {
+    @apply font-bold dark:text-white
+}
+
+.sub-type span.active {
+    @apply text-icons-color
+}
+
+.subs .box {
+    @apply dark:bg-dark-secondary-color px-8 py-10 rounded-sm duration-200 shadow-box-shadow hover:shadow-hover-box dark:hover:shadow-dark-hover-box
+}
+
+.subs .box .type {
+    @apply flex items-center justify-between mb-2
+}
+
+.subs .box .type .price {
+    @apply flex items-center
+}
+
+.subs .box .type .price h3,
+.subs .box .type .price h4 {
+    @apply m-0 text-[32px] font-bold dark:text-white
+}
+
+.subs .box .type .price span {
+    @apply font-medium text-lg text-text-2color translate-y-[3.5px]
+}
+
+.subs .box .type .sub {
+    @apply font-bold dark:text-white text-xl
+}
+
+.subs .box p {
+    @apply mb-7
+}
+
+.subs .box .btn {
+    @apply bg-icons-color text-white text-center py-3 duration-150 hover:contrast-125 cursor-pointer mb-8 rounded-sm font-semibold text-base
+}
+
+.subs .box ul {
+    @apply pt-9 border-t-1 dark:border-gray-700 border-gray-300 space-y-3
+}
+
+.subs .box ul li {
+    @apply flex items-center gap-2
+}
+
+.subs .box ul li ion-icon {
+    @apply text-icons-color bg-icons-bg-color rounded-full text-[13px] p-0.5
+}
+
+.subs .box ul li span {
+    @apply text-text-2color
+}
+
+.blog .box {
+    @apply rounded-sm overflow-hidden duration-200 shadow-box-shadow hover:shadow-hover-box dark:hover:shadow-dark-hover-box
+}
+
+.blog .box .pic {
+    @apply relative mb-2
+}
+
+.blog .box .pic img {
+    @apply w-full
+}
+
+.blog .box .pic span {
+    @apply absolute top-0 right-0 translate-x-[-23px] translate-y-[23px] font-bold text-white text-sm bg-icons-color rounded-[50px] px-4 py-2
+}
+
+.blog .box h4{
+    @apply duration-100 hover:text-icons-color dark:text-white w-fit font-bold text-xl sm:text-2xl cursor-pointer
+}
+
+.blog .box p{
+    @apply mt-4 font-medium pb-6 border-b-1 dark:border-gray-700 border-gray-300 duration-100
+}
+
+.blog .box .profile{
+    @apply  mt-5 flex items-center gap-5
+}
+
+.blog .box .profile .text{
+    @apply pr-5 border-r-1 dark:border-gray-700 border-gray-300 duration-100
+}
+
+.blog .box .profile h5{
+    @apply dark:text-white text-sm font-medium duration-100
+}
+
+.blog .box .profile span{
+    @apply text-text-2color text-[12px]
+}
+
+
+#support .title{
+    @apply text-left m-0
+}
+
+#support .ticket .name,
+#support .ticket .email,
+#support .ticket .message{
+    @apply relative w-full
+}
+
+label{
+    @apply absolute top-[-35px] left-0 text-[14px] font-medium dark:text-white
+}
+
+input,
+#support .ticket textarea{
+    @apply bg-[#f8f8f8] dark:bg-[#2C303B] placeholder:text-[#8397aa] rounded-[3px] px-6 py-3 w-full duration-125 outline-1 dark:outline-0 outline-gray-200 border-2 border-transparent focus:border-icons-color
+}
+
+#support .subscribe input:not(:last-of-type){
+    @apply mb-4
+}
+
+footer{
+    @apply text-text-color
+}
+
+footer .logo,
+footer h4{
+    @apply mb-10
+}
+
+footer h4{
+    @apply font-bold dark:text-white text-black text-xl
+}
+
+footer a{
+    @apply block duration-125 hover:text-icons-color
+}
+
+footer a:not(:last-of-type){
+    @apply mb-3
+}
+
+footer .social ion-icon,
+footer .social i{
+    @apply text-[20px] hover:text-icons-color cursor-pointer duration-125
+}
+
+footer .links{
+    @apply lg:w-2/12
+}
+
+footer .credits a{
+    @apply m-0 font-bold text-black dark:text-white hover:text-icons-color
+}
+
+footer .credits div{
+    @apply gap-[4px]
+}
+
+.sign .alt-log a,
+.sign a.submit{
+    @apply w-full py-3 bg-gray-100 dark:bg-dark-login hover:bg-[rgba(74,109,247,0.1)] text-text-color hover:text-icons-color dark:shadow-dark-hover-box flex-center duration-225 rounded border-1 border-gray-200 dark:border-transparent hover:border-icons-color
+}
+
+.sign .alt-log span.h-line{
+    @apply hidden min-[575px]:block h-[2px] w-[70px] bg-[#78829380]
+}
+.sign .credentials input{
+    @apply shadow-hover-box
+}
+
+.sign .check a{
+    @apply text-icons-color
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 450px) {
+    .container {
+        max-width: 450px
+    }
+}
+
+@media (min-width: 575px) {
+    .container {
+        max-width: 575px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
